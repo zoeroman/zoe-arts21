@@ -1,0 +1,17 @@
+.question-container {
+  color: blue;
+  background: pink;
+  border: 1px solid blue;
+  margin: 10px;
+  padding: 50px;
+  font-family: trebuchet MS;
+  font-size: 24px;
+}
+
+.answer{
+	font-size: 48px;
+ }
+
+.speaker {
+ 	color: yellow;
+ }
