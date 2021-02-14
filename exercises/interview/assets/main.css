@@ -1,17 +1,143 @@
-.question-container {
-  color: blue;
-  background: pink;
-  border: 1px solid blue;
-  margin: 10px;
-  padding: 50px;
-  font-family: trebuchet MS;
-  font-size: 24px;
+.question-container-1 {
+  background: lavender;
+  width: 800px;
+  border-color: #ffb997;
+  border-right: 5px solid #621940;
+  border-left: 12px solid #843b62;
+  border-top: 5px solid ;
+  border-bottom: 12px solid #843b62;
+  padding: 20px;
+  color: #621940;
+  font-family: times;
+  font-size: 20px;
 }
 
-.answer{
-	font-size: 48px;
- }
+.zoe-1 {
+  font-family: times;
+  color: #843b62;
+  font-size: 60px;
+}
 
-.speaker {
- 	color: yellow;
- }
+.erin-1 {
+  font-family: times;
+  color: #843b62;
+  font-size: 60px;
+}
+
+.question-container-2 {
+  margin-top: 100px; 
+  padding: 40px;
+  color: #aed1d6;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+.zoe-2 {
+  font-family: 'Jomhuria', cursive;
+  color: #a37f6f;
+  font-size: 60px;
+}
+
+.erin-2 {
+  font-family: 'Jomhuria', cursive;
+  color: #a37f6f;
+  font-size: 60px;
+}
+
+.question-container-3 {
+  margin-top: 100px; 
+  width: 620px;
+  padding: 30px;
+  background: #ffe6ee;
+  color: pink;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+}
+
+.zoe-3 {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 50px;
+}
+
+.erin-3 {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 50px;
+}
+
+.question-container-4 {
+  margin-top: 100px; 
+  border: 1px solid #013220;
+  width: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  color: #013220;
+  font-family: 'Poppins', black 900 sans-serif;
+  font-size: 50px;
+}
+
+.answer-4 {
+  text-align: right;
+}
+
+.zoe-4 {
+  font-family: 'Poppins', sans-serif;
+  color: #013220;
+  font-size: 80px;
+}
+
+.erin-4 {
+  font-family: 'Poppins', sans-serif;
+  color: #013220;
+  font-size: 80px;
+}
+
+.question-container-5a {
+  margin-top: 100px; 
+  background: black;
+  color: white;
+  padding: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-family: noto-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.question-container-5b {
+  margin-top: 100px; 
+  background: black;
+  color: white;
+  padding: 20px;
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: right;
+  font-family: noto-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.zoe-5 {
+  font-family: railroad-gothic-atf, sans-serif;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  color: white;
+  font-size: 200px;
+}
+
+.erin-5 {
+  font-family: railroad-gothic-atf, sans-serif;
+  font-style: normal;
+  text-align: right;
+  font-weight: 400;
+  color: white;
+  font-size: 200px;
+}
+
+
