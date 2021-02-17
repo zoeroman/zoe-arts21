@@ -1,0 +1,139 @@
+h1 {
+	font-family: arial;
+	background: #F5F5F5;
+	color: #7F7F7F;
+	padding: 5px;
+	font-size: 50px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+
+h2 {
+	font-size: 100px;
+	letter-spacing: 0px;
+	background: #DADEDF;
+	color: white;
+	font-family: arial;
+	width: 100px;
+	line-height: 60px;
+	border-radius: 20px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+
+h3 {
+	font-size: 100px;
+	letter-spacing: 0px;
+	background: #29b6f6;
+	color: white;
+	font-family: arial;
+	width: 100px;
+	line-height: 60px;
+	border-radius: 20px;
+	margin-left: 400px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+body{
+	width: 500px;
+	margin: auto;
+}
+
+.dad {
+ 	cursor: url(../assets/heart.png), auto;
+}
+
+h2 .text-1 { display: none; }
+h2:hover .loading-1 { display: none; }
+h2:hover .text-1{ display: block; }
+
+h3 .text-2 { display: none; }
+h3:hover .loading-2 { display: none; }
+h3:hover .text-2 { display: block; }
+
+h2 .text-3 { display: none; }
+h2:hover .loading-3 { display: none; }
+h2:hover .text-3 { display: block; }
+
+h3 .text-4 { display: none; }
+h3:hover .loading-4 { display: none; }
+h3:hover .text-4 { display: block; }
+
+h2 .text-5 { display: none; }
+h2:hover .loading-5 { display: none; }
+h2:hover .text-5 { display: block; }
+
+h3 .text-6 { display: none; }
+h3:hover .loading-6 { display: none; }
+h3:hover .text-6 { display: block; }
+
+
+.text-1 {
+	font-size: 25px;
+	background: #DADEDF;
+	color: white;
+	font-family: arial;
+	font-weight: thin;
+	width: 300px;
+	border-radius: 20px;
+	padding: 5px;
+}
+
+.text-2 {
+	font-size: 25px;
+	background: #29b6f6;
+	color: white;
+	font-family: arial;
+	font-weight: thin;
+	width: 120px;
+	border-radius: 20px;
+	padding: 5px;
+	text-align: right;
+}
+
+.text-3 {
+	font-size: 25px;
+	background: #DADEDF;
+	color: white;
+	font-family: arial;
+	font-weight: thin;
+	width: 200px;
+	border-radius: 20px;
+	padding: 5px;
+}
+
+.text-4 {
+	font-size: 25px;
+	background: #29b6f6;
+	color: white;
+	font-family: arial;
+	font-weight: thin;
+	width: 150px;
+	border-radius: 20px;
+	padding: 5px;
+	text-align: right;
+}
+
+.text-5 {
+	font-size: 25px;
+	background: #DADEDF;
+	color: white;
+	font-family: arial;
+	font-weight: thin;
+	width: 220px;
+	border-radius: 20px;
+	padding: 5px;
+}
+.text-6 {
+	font-size: 25px;
+	background: #29b6f6;
+	color: white;
+	font-family: arial;
+	font-weight: thin;
+	width: 120px;
+	border-radius: 20px;
+	padding: 5px;
+	text-align: right;
