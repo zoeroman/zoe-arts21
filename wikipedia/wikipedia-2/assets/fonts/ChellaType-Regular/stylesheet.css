@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'ChellaType';
+    src: url('ChellaType-Regular.eot');
+    src: url('ChellaType-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ChellaType-Regular.woff2') format('woff2'),
+        url('ChellaType-Regular.woff') format('woff'),
+        url('ChellaType-Regular.ttf') format('truetype'),
+        url('ChellaType-Regular.svg#ChellaType-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

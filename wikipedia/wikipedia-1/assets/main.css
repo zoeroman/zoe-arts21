@@ -1,0 +1,62 @@
+body {
+	font-family: din-condensed, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #E96D2F;
+	line-height: 1.4;
+	font-size: 20px;
+}
+
+h1 {
+	font-family: ChellaType-Regular;
+	font-size: 50px;
+	text-align: center;
+	color: #FED77A;
+	line-height: 5px;
+	padding: 20px;
+}
+
+h2 {
+	font-family: ChellaType-Regular;
+	text-align: center;
+	font-size: 35px;
+	color: 	#FED77A;
+	background-color: #C44F79;
+	padding: 20px;
+}
+
+h3 {
+	font-size: 40px;
+	font-weight: thick;
+	color: 	purple;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+.title {
+	background-color: #C44F79;
+	padding: 20px;
+}
+
+.wrapper {
+	background-color: #FED77A;
+	margin: auto;
+  	width: 70%;
+  	border: 3px black;
+  	padding: 10px;
+}
+
+#FED77A
+
+@font-face {
+    font-family: 'ChellaType-Regular';
+    src: url('ChellaType-Regular.eot');
+    src: url('ChellaType-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ChellaType-Regular.woff2') format('woff2'),
+        url('ChellaType-Regular.woff') format('woff'),
+        url('ChellaType-Regular.ttf') format('truetype'),
+        url('ChellaType-Regular.svg#ChellaType-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
