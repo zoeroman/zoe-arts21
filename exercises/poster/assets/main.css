@@ -1,0 +1,85 @@
+body {
+	background: rgb(244,0,107);
+    background: linear-gradient(180deg, rgba(244,0,107,1) 0%, rgba(90,74,200,1) 31%, rgba(255,153,0,1) 71%, rgba(0,163,10,1) 88%, rgba(0,117,255,1) 100%);
+	height: 5000px;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 50px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50%;
+  position: sticky;
+  top: 0;
+  padding-bottom: 60px;
+}
+
+.grid-item {
+  height: 50px;
+}
+
+.flexbox {
+  display: flex;
+  min-height: auto;
+}
+
+.flexbox-item {
+	margin: auto;
+}
+
+.item1 {
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+}
+
+.item2 {
+	text-align: right;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  padding-left: 10px;
+  height:5000px;
+  font-family: 'Prata', serif;
+}
+
+.wrapper div {
+  font-size: 14vw;
+  line-height: auto;
+  padding-top: 40px;
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+	padding-top: 60px;
+}
+
+.item4 {
+	padding-top: 30px;
+}
+
+.emoticons {
+	line-height: 400px;
+}
+
