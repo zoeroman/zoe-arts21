@@ -1,0 +1,81 @@
+body {
+}
+
+.circle1 {
+margin-left: 600px;
+margin-top: 200px;
+}
+
+.circle2 {
+margin-left: 300px;
+padding-top: 300px;
+}
+
+.square {
+  height: 600px;
+  width: 600px;
+  border: solid 20px beige;
+  position: absolute;
+  z-index: 4;
+  margin-left: 900px;
+  margin-top: 200px;
+  animation: appear 3s;
+}
+
+#background {
+  max-width: 100%;
+  max-height: 800px;
+  position: absolute;
+  z-index: -1;
+  animation: background 5s ease-in-out infinite;
+}
+
+#rings {
+  height:500px;
+  position: absolute;
+  z-index: 0;
+}
+
+#outside {
+  height: 250px;
+  margin-left: 250px;
+  position: absolute;
+  z-index: 3;
+}
+
+#rings:hover {
+  animation: spinType 2s ease-in-out infinite alternate;
+}
+
+@keyframes spinType {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(0.25turn);
+  }
+}
+
+@keyframes background {
+  0% {
+    transform: scale(1.5);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
