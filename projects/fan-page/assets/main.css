@@ -1,0 +1,147 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 50px;
+  }
+}
+
+.text-1 {
+color: black;
+line-height: 3vw;
+}
+
+.text-2 {
+color: white;
+background-color: black;
+line-height: 3vw;
+}
+
+.text-3 {
+color: black;
+line-height: 3vw;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+h1 {
+display: flex;
+justify-content: flex-start;
+font-size: 10vw;
+font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+display: flex;
+justify-content: flex-end;
+font-size: 10vw;
+font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+display: flex;
+justify-content: flex-end;
+font-size: 15vw;
+margin-right: 10vw;
+font-family: 'Playfair Display', serif;
+}
+
+h4 {
+display: flex;
+justify-content: flex-end;
+font-size: 12vw;
+font-family: 'Playfair Display', serif;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+.femininity_hover_img {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    cursor: hand;
+    }
+
+.femininity_hover_img img {
+        opacity:0;
+        transition: all 300ms;
+        position: absolute;
+        width: 40vw;
+        left: -10%;
+        border: 5px solid #fff;
+        box-shadow: 1px 1px 5px #888888;
+        z-index: 99999;
+    }
+
+.femininity_hover_img:hover img {
+        opacity:1;
+    }
+
+.elegance_hover_img {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    cursor: hand;
+    }
+
+.elegance_hover_img img {
+        opacity:0;
+        transition: all 300ms;
+        position: absolute;
+        width: 40vw;
+        left: -10%;
+        border: 5px solid #fff;
+        box-shadow: 1px 1px 5px #888888;
+        z-index: 99999;
+    }
+
+.elegance_hover_img:hover img {
+        opacity:1;
+    }
+
+.eyes {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+    }
+    
+.eyes .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    
+.eyes:hover .img-top {
+        display: inline;
+    }

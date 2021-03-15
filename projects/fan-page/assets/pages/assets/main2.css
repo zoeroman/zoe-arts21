@@ -1,0 +1,183 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 50px;
+  }
+}
+
+.text-1 {
+color: white;
+line-height: 3vw;
+background: black;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+h1 {
+display: flex;
+justify-content: flex-start;
+font-size: 10vw;
+font-family: 'Raleway Extra-Light', sans-serif;
+}
+
+h2 {
+display: flex;
+justify-content: flex-end;
+font-size: 10vw;
+font-family: 'Raleway Extra-Light', sans-serif;
+}
+
+h3 {
+display: flex;
+justify-content: flex-end;
+font-size: 10vw;
+font-family: 'Prata', serif;
+}
+
+h4 {
+display: flex;
+justify-content: flex-start;
+font-size: 10vw;
+font-family: 'Prata', serif;
+}
+
+.body img {
+  height: 500px;
+  width: 500px;
+}
+
+.eyes img{
+  height: 300px;
+  width: 575px;
+}
+
+.freckles img{
+  height: 415px;
+  width: 520Px;
+}
+
+.lips img{
+  height: 620PX;
+  width: 415PX;
+}
+
+.hair img{
+  height: 285px;
+  width: 375px;
+}
+
+.scroll-imgs {
+  background-image: url("../assets/clouds.png");
+  padding: 4vw;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scroll-imgs a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scroll-imgs a:hover {
+  background-color: #777;
+}
+
+.scroll-tiktok {
+  background-image: url("../assets/clouds.png");
+  padding: 4vw;
+  overflow: auto;
+  white-space: nowrap;
+  height: 400px;
+}
+
+.scroll-tiktok a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scroll-tiktok a:hover {
+  background-color: #777;
+}
+
+.scroll-text {
+ height: 50px; 
+ overflow: hidden;
+ position: relative;
+ background: black;
+ color: white;
+ font-family: 'Raleway Extra-Light 200', sans-serif;
+ font-weight: thin;
+ padding: 3px;
+}
+
+.scroll-text p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ transform:translateX(100%);
+ animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+ 0%   { 
+ transform: translateX(100%);     
+ }
+ 100% { 
+ transform: translateX(-100%); 
+ }
+}
+
+.scroll-text:hover {
+  animation-play-state: paused;
+}
+
+.quote-background {
+  background-color: white;
+  width: 100%;
+}
+
+.quote-text {
+  color: black;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vw;
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
