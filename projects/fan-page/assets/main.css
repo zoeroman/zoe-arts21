@@ -24,64 +24,98 @@ body {
   }
 }
 
-.text-1 {
-color: black;
-line-height: 3vw;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-.text-2 {
-color: white;
-background-color: black;
-line-height: 3vw;
+a:visited {
+  color: black;
+  text-decoration: none;
 }
 
-.text-3 {
-color: black;
-line-height: 3vw;
+.text-container-1 {
+  line-height: 0.2;
+  letter-spacing: 1px;  
+  font-size: 6vw;
+}
+
+.text-container-2 {
+  line-height: 0.2;
+  letter-spacing: 1px;  
+  font-size: 6vw;
+  background-color: black;
+  color: white;
+}
+
+.text-1-left {
+display: flex;
+justify-content: flex-start;
+font-family: roc-grotesk, sans-serif;
+font-weight: 100;
+font-style: normal;
+z-index: 0;
+}
+
+.text-1-right {
+display: flex;
+justify-content: flex-end;
+font-family: roc-grotesk, sans-serif;
+font-weight: 100;
+font-style: normal;
+z-index: 0;
+}
+
+.text-2-left {
+display: flex;
+justify-content: flex-start;
+font-family: ambroise-std, serif;
+font-weight: 300;
+font-style: normal;
+z-index: 0;
+}
+
+.text-2-right {
+display: flex;
+justify-content: flex-end;
+font-family: ambroise-std, serif;
+font-weight: 300;
+font-style: normal;
+z-index: 0;
+}
+
+.text-2-right:hover {
+display: flex;
+justify-content: flex-end;
+font-family: ambroise-std, serif;
+font-weight: 300;
+font-style: italic;
 }
 
 .underline {
-	text-decoration: underline;
+	text-decoration: underline 3px;
 }
 
 .line-through {
-	text-decoration: line-through;
+	text-decoration: line-through 3px;
 }
 
-h1 {
-display: flex;
-justify-content: flex-start;
-font-size: 10vw;
-font-family: 'Montserrat', sans-serif;
+
+.img-wrapper {
+  display: grid;
+  height: 125vh;
+  background: black;
 }
 
-h2 {
-display: flex;
-justify-content: flex-end;
-font-size: 10vw;
-font-family: 'Montserrat', sans-serif;
+.img-wrapper div{
+  grid-column: 1;
+  grid-row: 1;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--gray);
+  transition: opacity 0.1s;
 }
-
-h3 {
-display: flex;
-justify-content: flex-end;
-font-size: 15vw;
-margin-right: 10vw;
-font-family: 'Playfair Display', serif;
-}
-
-h4 {
-display: flex;
-justify-content: flex-end;
-font-size: 12vw;
-font-family: 'Playfair Display', serif;
-}
-
-img {
-	width: 100%;
-	height: auto;
-}
-
 
 .femininity_hover_img {
     position: relative;
@@ -94,8 +128,9 @@ img {
         opacity:0;
         transition: all 300ms;
         position: absolute;
-        width: 40vw;
-        left: -10%;
+        height: 30vw;
+        right: -10%;
+        top: -10%;
         border: 5px solid #fff;
         box-shadow: 1px 1px 5px #888888;
         z-index: 99999;
@@ -103,6 +138,15 @@ img {
 
 .femininity_hover_img:hover img {
         opacity:1;
+        font-family: roc-grotesk, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+.femininity_hover_img:hover {
+        font-family: ambroise-std, serif;
+        font-weight: 300;
+        font-style: normal;
     }
 
 .elegance_hover_img {
@@ -116,8 +160,9 @@ img {
         opacity:0;
         transition: all 300ms;
         position: absolute;
-        width: 40vw;
+        height: 30vw;
         left: -10%;
+        bottom: -10%;
         border: 5px solid #fff;
         box-shadow: 1px 1px 5px #888888;
         z-index: 99999;
@@ -127,21 +172,191 @@ img {
         opacity:1;
     }
 
-.eyes {
-        width: 100%;
-        height: auto;
-        position: relative;
-        display: inline-block;
+.elegance_hover_img:hover {
+        font-family: ambroise-std, serif;
+        font-weight: 300;
+        font-style: normal;
     }
-    
-.eyes .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
+
+.body img {
+  height: 500px;
+  width: auto;
+}
+
+.eyes img{
+  height: 300px;
+  width: auto;
+}
+
+.freckles img{
+  height: 415px;
+  width: auto;
+}
+
+.lips img{
+  height: 620px;
+  width: auto;
+}
+
+.hair img{
+  height: 285px;
+  width: auto;
+}
+
+.scroll-imgs {
+  background-image: url("../assets/glitter4.jpg");
+  background-repeat: repeat;
+  padding: 4vw;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scroll-imgs a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scroll-imgs a:hover {
+  background-color: black;
+}
+
+.scroll-embed {
+  background: black;
+  padding: 4vw;
+  overflow: auto;
+  white-space: nowrap;
+  height: 500px;
+}
+
+.scroll-embed a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scroll-embed a:hover {
+  background-color: #777;
+}
+
+.scroll-text {
+ height: 50px; 
+ overflow: hidden;
+ position: relative;
+ background: black;
+ color: white;
+ font-family: roc-grotesk, sans-serif;
+ font-weight: 100;
+ font-style: normal;
+ letter-spacing: 1px;
+ padding: 3px;
+}
+
+.scroll-text p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ transform:translateX(100%);
+ animation: scroll-left 20s linear infinite;
+}
+
+.scroll-text:hover p{
+  animation: scroll-left 30s ease-in-out infinite;
+}
+
+@keyframes scroll-left {
+ 0%   { 
+ transform: translateX(100%);     
+ }
+ 100% { 
+ transform: translateX(-100%); 
+ }
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.quote-background {
+  background-color: white;
+  width: 100%;
+  z-index: 0;
+}
+
+.quote{
+  color: black;
+  background-color: white;
+  font-family: ambroise-std, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5vw;
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  z-index: 0;
+}
+
+.speaker {
+  color: black;
+  background-color: white;
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 7vw;
+  height: auto;
+  margin-left: 50%;
+  z-index: 0;
+}
+
+.speaker:hover {
+    font-family: ambroise-std, serif;
+    font-weight: 300;
+    font-style: normal;
     }
-    
-.eyes:hover .img-top {
-        display: inline;
-    }
+
+svg {
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+}
+
+.left-sparkle{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.right-sparkle{
+    margin-left: 85%;
+}
+
+#sparkle1 {
+  height:100px;
+  animation: glitter 1s ease-in-out infinite;
+}
+
+#sparkle2 {
+  height:100px;
+  animation: glitter 2s ease-in-out infinite;
+}
+
+#sparkle3 {
+  height:100px;
+  animation: glitter 3s ease-in-out infinite;
+}
+
+
+@keyframes glitter {
+0% { opacity: 0;
+}
+50% { opacity: 1;
+}
+100% { opacity: 0;
+}
