@@ -105,7 +105,7 @@ z-index: 0;
 }
 
 .glitter-text:hover {
- background: url("../assets/glitter-silver.jpg") repeat center center;
+ background: url("../assets/glitter-gold.jpg") repeat center center;
  background-size: cover;
  color: #fff;
  -webkit-text-fill-color: transparent;
