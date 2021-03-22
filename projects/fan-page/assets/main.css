@@ -1,6 +1,7 @@
 body {
 	display: flex;
 	flex-direction: column;
+  background-color: white;
 }
 
 /* Tablet breakpoint */
@@ -30,7 +31,7 @@ a {
 }
 
 a:visited {
-  color: black;
+  color: black
   text-decoration: none;
 }
 
@@ -38,15 +39,28 @@ a:visited {
   line-height: 0.2;
   letter-spacing: 1px;  
   font-size: 6vw;
+  margin-bottom: 10vw;
+  background-color: white;
+  color: black;
 }
 
 .text-container-2 {
   line-height: 0.2;
   letter-spacing: 1px;  
   font-size: 6vw;
+  background-color: white;
+  color: black;
+}
+
+.text-container-3 {
+ line-height: 0.2;
+  letter-spacing: 1px;  
+  font-size: 6vw;
+  padding-bottom: 0vw;
   background-color: black;
   color: white;
 }
+
 
 .text-1-left {
 display: flex;
@@ -54,6 +68,7 @@ justify-content: flex-start;
 font-family: roc-grotesk, sans-serif;
 font-weight: 100;
 font-style: normal;
+line-height: 0.2;
 z-index: 0;
 }
 
@@ -84,12 +99,55 @@ font-style: normal;
 z-index: 0;
 }
 
-.text-2-right:hover {
-display: flex;
-justify-content: flex-end;
-font-family: ambroise-std, serif;
-font-weight: 300;
-font-style: italic;
+.glitter-text {
+  margin-top: -4vw;
+  font-size: 8vw;
+}
+
+.glitter-text:hover {
+ background: url("../assets/glitter-silver.jpg") repeat center center;
+ background-size: cover;
+ color: #fff;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip:text;
+ background-clip:text; 
+ font-family: ambroise-std, serif;
+ font-weight: 300;
+ font-style: italic;
+ font-size:8vw;
+ padding:0;
+ margin:0;
+ margin-bottom: 12vw;
+ margin-top: -12vw;
+ margin-left: 29.5vw;
+ position: absolute;
+}
+
+.glitter-text-2 {
+ color: white;
+ font-family: ambroise-std, serif;
+ margin-top: -8vw;
+ margin-left: 15vw;
+ position: absolute;
+}
+
+.glitter-text-2:hover {
+ background: url("../assets/glitter-gold.jpg") repeat center center;
+ background-size: cover;
+ color: #fff;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip:text;
+ background-clip:text; 
+ font-family: ambroise-std, serif;
+ font-weight: 300;
+ font-style: italic;
+ font-size:6vw;
+ padding:0;
+ margin:0;
+ margin-top: -8vw;
+ margin-left: 15vw;
 }
 
 .underline {
@@ -103,8 +161,9 @@ font-style: italic;
 
 .img-wrapper {
   display: grid;
-  height: 125vh;
-  background: black;
+  height: 250vh;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .img-wrapper div{
@@ -204,7 +263,7 @@ font-style: italic;
 }
 
 .scroll-imgs {
-  background-image: url("../assets/glitter4.jpg");
+  background-image: url("../assets/glitter-pink2.jpg");
   background-repeat: repeat;
   padding: 4vw;
   overflow: auto;
@@ -224,7 +283,7 @@ font-style: italic;
 }
 
 .scroll-embed {
-  background: black;
+  background-image: url("../assets/glitter-black.jpg");
   padding: 4vw;
   overflow: auto;
   white-space: nowrap;
@@ -235,6 +294,17 @@ font-style: italic;
   display: inline-block;
   color: white;
   text-align: center;
+  align-content: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scroll-embed video {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  margin-left: 40%;
+  align-content: center;
   padding: 14px;
   text-decoration: none;
 }
@@ -267,13 +337,13 @@ font-style: italic;
  animation: scroll-left 20s linear infinite;
 }
 
-.scroll-text:hover p{
-  animation: scroll-left 30s ease-in-out infinite;
+.scroll-text.next p,.scroll-text:hover p  {
+  animation: scroll-left 30s linear infinite;
 }
 
 @keyframes scroll-left {
  0%   { 
- transform: translateX(100%);     
+ transform: translateX(50%);     
  }
  100% { 
  transform: translateX(-100%); 
@@ -286,14 +356,16 @@ font-style: italic;
 }
 
 .quote-background {
-  background-color: white;
+  background-image: url("../assets/glitter-silver.jpg");
+  background-repeat: repeat;
   width: 100%;
   z-index: 0;
 }
 
 .quote{
   color: black;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.5); 
+  padding: 10px;
   font-family: ambroise-std, serif;
   font-weight: 300;
   font-style: normal;
@@ -306,7 +378,8 @@ font-style: italic;
 
 .speaker {
   color: black;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.5); 
+  padding: 10px;
   font-family: roc-grotesk, sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -324,7 +397,7 @@ font-style: italic;
 
 svg {
     height: 100px;
-    z-index: 1;
+    z-index: 3;
     position: absolute;
 }
 
@@ -334,7 +407,7 @@ svg {
 }
 
 .right-sparkle{
-    margin-left: 85%;
+    margin-left: 90%;
 }
 
 #sparkle1 {
@@ -352,11 +425,26 @@ svg {
   animation: glitter 3s ease-in-out infinite;
 }
 
-
 @keyframes glitter {
 0% { opacity: 0;
 }
 50% { opacity: 1;
 }
 100% { opacity: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
