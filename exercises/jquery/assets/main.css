@@ -1,0 +1,49 @@
+
+body {
+  font-family: Garamond;
+  background-color: lightblue;
+}
+
+h1 {
+    transform: rotate(90deg);
+    margin-bottom: -200px;
+}
+
+p {
+    transform: rotate(90deg);
+}
+
+.container { 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.item {
+  text-align: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.rotate {
+ transform: rotate(270deg);
+}
+
+.button {
+  background-color: white;
+  border: 2px solid;
+  padding: 20px;
+  font-size: 36px;
+  max-width: 960px;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.yellow {
+  background-color: yellow;
+}
