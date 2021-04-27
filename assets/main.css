@@ -1,0 +1,100 @@
+
+body {
+	overflow: hidden;
+	margin:0; 
+	padding:0; 
+	height:100%;
+	text-align: center;
+	cursor: url(favicon.png) 2 2, auto;
+}
+
+
+.intro {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.intro .project{
+  opacity: 0;
+}
+
+.intro .exercise{
+  opacity: 0;
+}
+
+.intro h1{
+  color: black;
+  text-align: center;
+}
+
+h1 {
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 4px;
+	font-size: 4vw;
+	line-height: 1vw;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+
+h2 {
+	color: white;
+    font-family: 'Anton', sans-serif;
+	letter-spacing: 4px;
+	font-size: 4vw;
+	line-height: 1vw;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.goBtnCentre {
+	width:100%; 
+	clear:both; 
+	height: 80px; 
+	margin:20px 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.goButton {
+	height: 80px; 
+	width:600px; 
+	margin:0 auto;
+}
+
+.goButton h2 {
+	text-align: center;
+	color: white;
+	letter-spacing: 4px;
+	font-size: 4vw;
+	line-height: 1vw;
+	cursor: pointer;
+}
+
+.imgCentre .project {
+	background:#FFF; 
+	float:left; 
+	width:200px; 
+	height:200px; 
+	margin:10px; 
+	border:10px solid black;
+}
+
+.imgCentre .exercise {
+	background:#FFF; 
+	float:left; 
+	width:200px; 
+	height:200px; 
+	margin:10px; 
+	border:10px solid black;
+}
+
+.next {
+	position: fixed;
+	margin: 0;
+}
+
