@@ -1,0 +1,70 @@
+img {
+	width: 100%;
+}
+
+.intro {
+	background-color: #1B0000;
+	background-image: url("../assets/brick-house.png");
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 1600px;
+}
+
+.image {
+    height: 7500px;
+}
+
+.illustration {
+	width: 100%;
+	height: 90%;
+	position: sticky;
+	top: 0;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.embed-container img {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.embed-container blockquote {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
